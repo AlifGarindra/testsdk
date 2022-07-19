@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://maven.pkg.github.com/neworchid/mylibiv/'
+            credentials {
+                username = "neworchid"
+                password = "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"
+            }
+        }
+    }
+}
+rootProject.name = "First App"
+include ':app'
